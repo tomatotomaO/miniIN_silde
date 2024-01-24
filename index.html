@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미니인턴</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .headline {
+            color: gray;
+            display: inline-flex;
+            background-color: white;
+        }
+
+        .headline span {
+            margin: 30px;
+            padding: auto;
+            text-align: left;
+            vertical-align: top;
+            font-size: 30px;
+            margin-top: 40px;
+        }
+
+       #space {
+        display: inline-flex;
+        margin-right: 800px;
+       }
+
+        .login {
+            display: inline-flex;
+            background-color: white;
+            color: skyblue;
+        }
+
+        .login span {
+            font-size: 30px;
+            text-align: right;
+            margin: 30px;
+            padding: auto;
+            vertical-align: top;
+            margin-top: 40px;
+        }
+
+        #carousel-container {
+          display: inline-block;
+      position: relative;
+      overflow: hidden;
+      width: 1200px;
+      height: 800px;
+      margin: 100px 40px 40px 500px;
+      border-radius: 3%;
+    }
+
+    #carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      position: relative;
+    }
+
+    .slide {
+      min-width: 100%;
+      position: relative;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 1200px;
+      height: 800px;
+      border-radius: 3%;
+      filter: brightness(50%);
+    }
+
+    .paint_inform{
+      margin-top: 100px;
+      width: 600px;
+      height: 800px;
+      display: inline-flex;
+      vertical-align: top;
+      background-color: rgb(229, 238, 249);
+      border-radius: 3%;
+      text-align: left;
+    }
+
+#texts {
+  display:block;
+  margin: 30px;
+  margin-left: 60px;
+}
+
+#p1 {
+  font-size: 20px;
+  color: blue;
+  padding-top: 40px;
+  font-weight: 400;
+}
+
+#p2{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#p3{
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  border-radius: 5%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+    #prev, #next {
+      position: absolute;
+      top: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border: none;
+      width: 40px;
+      transform: translateY(-50%);
+      transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out, right 0.5s ease-in-out;
+    }
+
+    #prev { left: 0; }
+    #next { right: 0; }
+
+    #text_carousel{
+      color:white;
+      position: absolute;
+      display:block;
+      border: none;
+      top:20px;
+      font-size: 24px;
+  margin: 10px;
+  margin-left: 60px;
+    }
+
+    #t1{
+      font-size: 70px;
+    }
+
+    #t2{
+      font-size: 40px;
+    }
+    #t3{
+      padding-top: 280px;
+    }
+
+    .projects{
+      padding-left: 500px;
+    }
+
+    #p_texts{
+      margin: 0;
+      font-size: 30px;
+      padding: 0;
+    }
+
+#op1{
+  padding-top: 100px;
+  font-size: 50px;
+  display: block;
+  line-height: 5px;
+}
+    #all_op{
+      color: skyblue;
+      padding-left: 650px;
+    }
+    </style>
+</head>
+<body>
+
+<div style="float: left">
+    <img src="miniintern.png" alt="미니인턴 로고" class="logo">
+</div>
+
+<div>
+<span class="headline">
+    <span>미니인턴</span>
+    <span>스킬업</span>
+    <span>M클래스</span>
+    <span>채용관</span>
+    <span>해피폴리오</span>
+</span>
+<span id="space"> </span>
+
+<span class="login"> 
+    
+    <span style="color: gray;" >서비스 소개</span>
+    
+    <span>회원가입</span>
+    <span>로그인</span>
+    <span>기업회원</span>
+</span>
+</div>
+<br>
+<hr>
+
+<div id="carousel-container">
+  <div id="carousel">
+    <div class="slide"><img src="background_image1.jpg" alt="Image 1"></div>
+    <div class="slide"><img src="background_image2.jpg" alt="Image 2"></div>
+    <div class="slide"><img src="background_image3.jpg" alt="Image 3"></div>
+  </div>
+
+  <button id="prev">&#9665;</button>
+  <button id="next">&#9655;</button>
+
+  <div id="text_carousel">  
+    <p id="t1"> 최대한의 효율로<br>직무 경험을 쌓아보세요</p>
+    <p id="t2">2주만에 실무 경험을 만드는, 미니인턴</p>
+    <p id="t3">회원가입하기</p>
+  </div>
+
+  
+</div>
+
+<div class="paint_inform">
+  <div id="texts">  
+  <p id="p1"> 포폴 템플릿 + 직무별 취업 정보집 + 취준 다이어리</p>
+  <p id="p2">여러분이<br>
+    찾아 헤매던<br>
+    취업 준비 자료들</p>
+  <p id="p3">지금 가입하면 100% 무료 증정</p>
+</div>
+</div>
+
+<div class="projects">
+  <div id="p_texts">
+    <p id="op1">미니인턴으로 취업하세요</p>
+    <span>이제 집, 학교, 도서관, 카페에서 인턴십을 경험하고, 실무역량평가로 취업하세요</span>
+    <span id="all_op">&#9655; 모든 기업과제 보기</span>
+  </div>
+
+</div>
+
+<script>
+  const carouselContainer = document.getElementById('carousel-container');
+  const carousel = document.getElementById('carousel');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+  let slideInterval;
+
+  function adjustButtonPosition() {
+    const currentSlide = slides[currentIndex];
+    const slideLeft = 0;  // 이미지의 왼쪽 끝
+    const slideRight = carouselContainer.clientWidth - currentSlide.clientWidth;  // 이미지의 오른쪽 끝
+
+    // 버튼 위치를 좌표에 따라 조정
+    prevBtn.style.left = `${slideLeft}px`;
+    nextBtn.style.right = `${slideRight}px`;
+  }
+
+  function showSlide(index) {
+    carousel.style.transform = `translateX(${-index * 100}%)`;
+    adjustButtonPosition();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function hideButtons() {
+    prevBtn.style.opacity = 0;
+    nextBtn.style.opacity = 0;
+  }
+
+  function showButtons() {
+    prevBtn.style.opacity = 1;
+    nextBtn.style.opacity = 1;
+  }
+
+  function startAutoSlide() {
+    slideInterval = setInterval(() => {
+      nextSlide();
+    }, 2000); // 2초마다 다음 슬라이드로 이동
+  }
+
+  function stopAutoSlide() {
+    clearInterval(slideInterval);
+  }
+
+  prevBtn.addEventListener('click', () => {
+    stopAutoSlide();
+    prevSlide();
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    stopAutoSlide();
+    nextSlide();
+  });
+
+  carouselContainer.addEventListener('mouseenter', showButtons);
+  carouselContainer.addEventListener('mouseleave', () => {
+    stopAutoSlide();
+    hideButtons();
+    startAutoSlide(); // 마우스가 벗어나면 다시 자동 슬라이드 시작
+  });
+
+  window.addEventListener('resize', () => {
+    adjustButtonPosition();
+    showSlide(currentIndex);
+  });
+
+  window.addEventListener('load', () => {
+    adjustButtonPosition();
+    showSlide(currentIndex);
+    startAutoSlide(); // 페이지 로드 후 자동 슬라이드 시작
+  });
+</script>
+
+</body>
+</html>
